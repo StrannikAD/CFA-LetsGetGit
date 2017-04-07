@@ -11,7 +11,7 @@
   <body>
   	<div class="hero-head">
       <div class="container">
-        <nav class="nav">
+        <nav class="nav"> <!-- NAV BAR - Want to be transparent -->
           <div class="container">
             <div class="nav-left">
               <a class="nav-item" href="../index.html">
@@ -33,19 +33,13 @@
               <a class="nav-item">
                 Home
               </a>
-              <span class="nav-item">
-                <a class="button is-default">
-                	<% if user_signed_in? %>
-					  <li>
-					  	<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-					  </li>
-					<% else %>
-					  <li>
-					  	<%= link_to('Login', new_user_session_path)  %>
-					  </li>
-					<% end %>
-                </a>
-              </span>
+            	<% if user_signed_in? %>
+				  	<%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => 'nav-item') %>
+				  
+				<% else %>
+				  	<%= link_to('Login', new_user_session_path, :class => 'nav-item') %>
+				  
+				<% end %>
             </div>
           </div>
         </nav><!-- end nav -->
