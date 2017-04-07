@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  root 'pages#home'
 
   get 'pages/about'
 
@@ -11,6 +11,9 @@ Rails.application.routes.draw do
 
   get 'pages/results'
 
-  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } 
+  #   delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+  # end
 end
