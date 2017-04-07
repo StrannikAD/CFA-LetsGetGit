@@ -1,2 +1,49 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section class="hero is-fullheight background-img">
+	<div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered">
+          <div class="column is-5">
+            <figure class="image is-4by3">
+              <img src="http://res.cloudinary.com/stefank9/image/upload/c_scale,w_453/v1491527923/NS3-PROJECTS-CODING_frfaha.jpg" class="promo-img" alt="Description">
+            </figure>
+          </div>
+          <div class="column is-6 is-offset-1">
+					<h3>Sign Up Here</h3>
+					<form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N+d657zfhwV6/gpHd7k2RiZDthXBLRHxcyQ8RnXi4JQqEQqEqo92eL7k0gyhiiNX6jPIXepvcyefW+iz6vwAyA==">
+					  <div class="field">
+					    <label for="user_email">Email</label><br>
+					    <input autofocus="autofocus" type="email" value="" name="user[email]" id="user_email">
+					  </div>
+
+					  <div class="field">
+					    <label for="user_password">Password</label>
+					    <em>(6 characters minimum)</em>
+					    <br>
+					    <input autocomplete="off" type="password" name="user[password]" id="user_password">
+					  </div>
+
+					  <div class="field">
+					    <label for="user_password_confirmation">Password confirmation</label><br>
+					    <input autocomplete="off" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+					  </div>
+
+					  <div class="actions">
+					    <input type="submit" name="commit" value="Sign up" data-disable-with="Sign up">
+					  </div>
+					</form>
+				</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <div class="container">
+        <div class="tabs is-centered">
+          <ul>
+            <li><a href="http://bulma.io">Made with bulma</a></li>
+            <li><a>&Copy 2017</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end footer content -->
+</section>

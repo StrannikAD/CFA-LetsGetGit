@@ -1,3 +1,45 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.background-img {
+background-color: #F62459;
+background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('http://res.cloudinary.com/stefank9/image/upload/v1491529426/AIT_LOGO_newblue_y9eugb_efcybz.png');
+background-repeat: no-repeat;
+}
+
+.nav {
+padding: 20px 0;
+}
+
+.hero.is-dark .nav-item a:not(.button), .hero.is-dark a.nav-item {
+  color: #fff;
+  padding: 0 30px;
+}
+
+.nav-item {
+font-weight: bold;
+text-transform: uppercase;
+color: #fff;
+}
+
+.nav-item .button{
+font-weight: bold;
+text-transform: uppercase;
+color: #fff;
+background-color: transparent;
+border: 2px solid #fff;
+padding: 10px 20px;
+height: 45px;
+border-radius: 2px;
+}
+
+.promo-img {
+border-radius: 10px;
+border: 10px solid #fff;
+}

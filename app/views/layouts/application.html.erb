@@ -9,6 +9,48 @@
   </head>
 
   <body>
+  	<div class="hero-head">
+      <div class="container">
+        <nav class="nav">
+          <div class="container">
+            <div class="nav-left">
+              <a class="nav-item" href="../index.html">
+                <img class="main-logo" src="http://res.cloudinary.com/stefank9/image/upload/v1491539474/cf-logo_ekywst.png" alt="Home Logo">
+              </a>
+            </div>
+            <span class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <div class="nav-right nav-menu">
+              <a class="nav-item">
+                About
+              </a>
+              <a class="nav-item">
+                Quiz
+              </a>
+              <a class="nav-item">
+                Home
+              </a>
+              <span class="nav-item">
+                <a class="button is-default">
+                	<% if user_signed_in? %>
+					  <li>
+					  	<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+					  </li>
+					<% else %>
+					  <li>
+					  	<%= link_to('Login', new_user_session_path)  %>
+					  </li>
+					<% end %>
+                </a>
+              </span>
+            </div>
+          </div>
+        </nav><!-- end nav -->
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
