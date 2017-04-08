@@ -1,5 +1,84 @@
-<section class="hero is-fullheight background-img">
-	<div class="hero-body">
+<style media="screen">
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #fff;
+
+}
+html {
+	overflow: hidden;
+  background-color: #F62459;
+	background-size: cover;
+  background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1460518451285-97b6aa326961?dpr=1&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=511&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=');
+}
+.nav {
+  padding: 0px 0px 20px 0px;
+	background-color: transparent;
+}
+.hero.is-dark .nav-item a:not(.button), .hero.is-dark a.nav-item {
+    color: #fff;
+    padding: 0 30px;
+}
+a.nav-item {
+  color: #ffffff;
+}
+.nav-item .button{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  height: 45px;
+  border-radius;
+}
+.promo-img {
+  border-radius: 10px;
+  border: 10px solid #fff;
+}
+</style>
+<hr>
+<div class="hero-body">
+	<div class="container has-text-centered">
+		<div class="columns is-vcentered">
+			<div class="column is-3">
+				<figure class="image is-3by3">
+					<%= image_tag("logo.png", :class => 'promo-img') %>
+					<!-- <img src="https://images.unsplash.com/photo-1461669802687-84a1aee43a29?dpr=1&auto=format&crop=entropy&fit=crop&w=800&h=600&q=80" class="promo-img" alt="Description"> -->
+				</figure>
+			</div>
+			<div class="column is-6 is-offset-1">
+				<h1 class="title is-2">
+					Introducing Landing Page
+				</h1>
+				<h2 class="subtitle is-4">
+					It's time to say hello to bulma.
+				</h2>
+				<br>
+				<p class="control has-addons has-text-centered">
+					<input class="input is-expanded is-large" type="text" placeholder="Join the beta waitlist, you@example.org">
+					<a class="button is-large is-danger is-outlined">
+						Sign Up
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="hero-foot">
+	<div class="container">
+		<div class="tabs is-centered">
+			<ul>
+				<li><a href="http://bulma.io">Made with bulma</a></li>
+				<li><a>Copyright 2016 Bulma</a></li>
+				<li><a href="http://unsplash.com">Images via unsplash</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+	<!-- <div class="hero-body">
       <div class="container has-text-centered">
         <div class="columns is-vcentered">
           <div class="column is-5">
@@ -45,5 +124,4 @@
           </ul>
         </div>
       </div>
-    </div><!-- end footer content -->
-</section>
+    </div> -->

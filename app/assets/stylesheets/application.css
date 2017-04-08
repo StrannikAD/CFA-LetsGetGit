@@ -15,3 +15,6 @@
  */
 
  @import "bulma";
+.nav {
+  background-color: transparent;
+}
