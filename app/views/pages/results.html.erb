@@ -1,2 +1,179 @@
-<h1>Pages#results</h1>
-<p>Find me in app/views/pages/results.html.erb</p>
+
+
+<div class="columns is-mobile is-multiline">
+  <div class="column is-one-third-desktop">
+    <section class="panel">
+      <p class="panel-heading">
+        Match #1
+      </p>
+        <div class="panel-block">
+          <strong>You have been matched with Elise Young!</strong><br><br>
+          <table style="width:100%">
+            <tr>
+              <td><canvas id="myChart" width="200" height="200"></canvas></td>
+            </tr>
+          </table>
+        </div>
+        <div class="panel-block">
+          <button class="button is-default is-outlined is-fullwidth">
+            Message
+          </button>
+        </div>
+    </section>
+  </div>
+  <div class="column is-one-third-desktop">
+    <section class="panel">
+      <p class="panel-heading">
+        Match #2
+      </p>
+        <div class="panel-block">
+          <strong>You have been matched with Stefan Piatkov!</strong><br><br>
+          <table style="width:100%">
+            <tr>
+              <td><canvas id="myChart2" width="200" height="200"></canvas></td>
+            </tr>
+          </table>
+        </div>
+        <div class="panel-block">
+          <button class="button is-default is-outlined is-fullwidth">
+            Message
+          </button>
+        </div>
+    </section>
+  </div>
+  <div class="column is-one-third-desktop">
+    <section class="panel">
+      <p class="panel-heading">
+        Match #3
+      </p>
+        <div class="panel-block">
+          <strong>You have been matched with Anna Dimitrova!</strong><br><br>
+          <table style="width:100%">
+            <tr>
+              <td><canvas id="myChart3" width="200" height="200"></canvas></td>
+            </tr>
+          </table>
+        </div>
+        <div class="panel-block">
+          <button class="button is-default is-outlined is-fullwidth">
+            Message
+          </button>
+        </div>
+    </section>
+  </div>
+</div>
+
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ["HTML/CSS", "Ruby", "Presentation"],
+datasets: [
+  {
+      label: "Shouhei",
+      backgroundColor: "rgba(179,181,198,0.2)",
+      borderColor: "rgba(179,181,198,1)",
+      pointBackgroundColor: "rgba(179,181,198,1)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgba(179,181,198,1)",
+      data: [20, 73, 15]
+  },
+  {
+      label: "Elise",
+      backgroundColor: "rgba(255,99,132,0.2)",
+      borderColor: "rgba(255,99,132,1)",
+      pointBackgroundColor: "rgba(255,99,132,1)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgba(255,99,132,1)",
+      data: [88, 22, 65]
+  }]
+    },
+    options: {
+        scale: {
+            reverse: false,
+            ticks: {
+                beginAtZero: true
+            }
+        }
+}
+});
+</script>
+<script>
+var ctx = document.getElementById("myChart2");
+var myChart2 = new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+datasets: [
+  {
+      label: "My First dataset",
+      backgroundColor: "rgba(179,181,198,0.2)",
+      borderColor: "rgba(179,181,198,1)",
+      pointBackgroundColor: "rgba(179,181,198,1)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgba(179,181,198,1)",
+      data: [65, 59, 90, 81, 56, 55, 40]
+  },
+  {
+      label: "My Second dataset",
+      backgroundColor: "rgba(255,99,132,0.2)",
+      borderColor: "rgba(255,99,132,1)",
+      pointBackgroundColor: "rgba(255,99,132,1)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgba(255,99,132,1)",
+      data: [28, 48, 40, 19, 96, 27, 100]
+  }]
+    },
+    options: {
+        scale: {
+            reverse: true,
+            ticks: {
+                beginAtZero: true
+            }
+        }
+}
+});
+</script>
+<script>
+var ctx = document.getElementById("myChart3");
+var myChart3 = new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+datasets: [
+  {
+      label: "My First dataset",
+      backgroundColor: "rgba(179,181,198,0.2)",
+      borderColor: "rgba(179,181,198,1)",
+      pointBackgroundColor: "rgba(179,181,198,1)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgba(179,181,198,1)",
+      data: [65, 59, 90, 81, 56, 55, 40]
+  },
+  {
+      label: "My Second dataset",
+      backgroundColor: "rgba(255,99,132,0.2)",
+      borderColor: "rgba(255,99,132,1)",
+      pointBackgroundColor: "rgba(255,99,132,1)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgba(255,99,132,1)",
+      data: [28, 48, 40, 19, 96, 27, 100]
+  }]
+    },
+    options: {
+        scale: {
+            reverse: true,
+            ticks: {
+                beginAtZero: true
+            }
+        }
+}
+});
+</script>

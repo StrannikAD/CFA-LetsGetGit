@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LetsGetGit</title>
+    <title>Skill Exchange</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -16,7 +16,7 @@
           <div class="container">
             <div class="nav-left">
               <a class="nav-item" href="/">
-                <%= image_tag("meeting.svg", width: '50') %> | Buddy Matcher
+                <%= image_tag("meeting.svg", width: '50') %> | Skill Exchange
               </a>
             </div>
             <span class="nav-toggle">
@@ -28,7 +28,7 @@
               <%= link_to 'Home', root_path, :class => 'nav-item' %>
               <%= link_to 'About', pages_about_path, :class => 'nav-item' %>
               <%= link_to 'Quiz', pages_quiz_path, :class => 'nav-item' %>
-              <%= link_to 'Dashboard', pages_student_dashboard_path, :class => 'nav-item' %>
+              <%= link_to 'Dashboard', pages_admin_dashboard_path, :class => 'nav-item' %>
             	<% if user_signed_in? %>
 				  	<%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => 'nav-item') %>
 
