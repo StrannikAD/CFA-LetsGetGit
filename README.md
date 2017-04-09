@@ -16,8 +16,16 @@ Students who excel in technical skills may need to boost their soft skills, and 
 
 Our solution was to create an online platform, Skill Exchange, where students are able to take a comprehensive skills quiz to identify any knowledge gaps. Subsequently the result of the quiz pairs them with other students according to both of their learning needs.
 
+### Tech & Gems
+
+The website uses the following requirements to work properly:
+
+* Rails version 5.0.2 - Ruby on Rails.
+* Bulma - CSS framework.
+* Devise - a flexible authentication solution for Rails.
+* OmniAuth - a library that standardizes multi-provider authentication for web applications.
+
 ### Installation
-Rails version 5.0.2
 
 To get started with the application, clone the repository:
 
