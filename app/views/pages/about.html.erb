@@ -1,2 +1,63 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+
+<style media="screen">
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #fff;
+
+}
+html {
+	/*overflow: hidden;*/
+  background-color: #F62459;
+	/*background-size: cover;*/
+  background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+}
+.nav {
+  padding: 0px 0px 20px 0px;
+	background-color: transparent;
+}
+.hero.is-dark .nav-item a:not(.button), .hero.is-dark a.nav-item {
+    color: #fff;
+    padding: 0 30px;
+}
+a.nav-item {
+  color: #ffffff;
+}
+.nav-item .button{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  height: 45px;
+  border-radius;
+}
+.promo-img {
+  border-radius: 10px;
+  border: 10px solid #fff;
+}
+
+</style>
+<hr>
+<div class="hero-body">
+	<div class="container has-text-centered">
+		<div class="columns is-vcentered">
+			<div class="column is-10 is-offset-1">
+				<h1 class="title is-2" style="color:white">
+					About Skill Exchange
+				</h1>
+				<h2 class="subtitle is-3" style="color:#D6D6D6">
+         <br>Skill Exchange is a comprehensive quiz application that aims to find the perfect mentor partnership. It is about providing comfort in a classroom environment where students commonly feel lost and struggle to ask for help.</br>
+              <br>The students will be paired with their mentor based on the answers they gave when doing the quiz which targeted their weaknesses and strengths.
+              A student can have multiple mentors and can mentor multiple students.</br>
+              <br>Skill Exchange Focuses on technical skills like Ruby, Javascript and Git as well as soft skills like communication, customer service and presenting skills. We believe that both skill sets are needed to be successful in your chosen course/career.</br>
+
+            <br> Everybody has something to offer. Everybody has something to gain. </br>
+				</h2>
+				<br>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= render "partials/footer" %>
