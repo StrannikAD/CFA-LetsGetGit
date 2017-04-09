@@ -1,6 +1,44 @@
 
 
 <div class="columns is-mobile is-multiline">
+  <div class="column is-half">
+    <section class="panel">
+      <p class="panel-heading">
+        Analysis Result
+      </p>
+        <div class="panel-block">
+          <table style="width:100%">
+            <tr>
+              <td><canvas id="stats" width="200" height="200"></canvas></td>
+            </tr>
+          </table>
+        </div>
+        <div class="panel-block">
+          <button class="button is-default is-outlined is-fullwidth">
+            View Data
+          </button>
+        </div>
+    </section>
+  </div>
+  <div class="column is-half">
+    <section class="panel">
+      <p class="panel-heading">
+        Watson Personality Insight
+      </p>
+        <div class="panel-block">
+          <table style="width:100%">
+            <tr>
+              <td><%= image_tag("watsonvisualization") %></td>
+            </tr>
+          </table>
+        </div>
+        <div class="panel-block">
+          <button class="button is-default is-outlined is-fullwidth">
+            View Data
+          </button>
+        </div>
+    </section>
+  </div>
   <div class="column is-one-third-desktop">
     <section class="panel">
       <p class="panel-heading">
@@ -72,12 +110,12 @@ var myChart = new Chart(ctx, {
 datasets: [
   {
       label: "Shouhei",
-      backgroundColor: "rgba(179,181,198,0.2)",
-      borderColor: "rgba(179,181,198,1)",
-      pointBackgroundColor: "rgba(179,181,198,1)",
+      backgroundColor: "rgba(54, 162, 235, 0.2)",
+      borderColor: "rgba(54, 162, 235, 1)",
+      pointBackgroundColor: "rgba(54, 162, 235, 1)",
       pointBorderColor: "#fff",
       pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgba(179,181,198,1)",
+      pointHoverBorderColor: "rgba(54, 162, 235, 1)",
       data: [20, 73, 15]
   },
   {
@@ -106,32 +144,32 @@ var ctx = document.getElementById("myChart2");
 var myChart2 = new Chart(ctx, {
     type: 'radar',
     data: {
-      labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+      labels: ["Critical Thinking", "Reading", "HTML/CSS", "Javascript"],
 datasets: [
   {
-      label: "My First dataset",
-      backgroundColor: "rgba(179,181,198,0.2)",
-      borderColor: "rgba(179,181,198,1)",
-      pointBackgroundColor: "rgba(179,181,198,1)",
+      label: "Shouhei",
+      backgroundColor: "rgba(54, 162, 235, 0.2)",
+      borderColor: "rgba(54, 162, 235, 1)",
+      pointBackgroundColor: "rgba(54, 162, 235, 1)",
       pointBorderColor: "#fff",
       pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgba(179,181,198,1)",
-      data: [65, 59, 90, 81, 56, 55, 40]
+      pointHoverBorderColor: "rgba(54, 162, 235, 1)",
+      data: [65, 16, 20, 35]
   },
   {
-      label: "My Second dataset",
+      label: "Stefan",
       backgroundColor: "rgba(255,99,132,0.2)",
       borderColor: "rgba(255,99,132,1)",
       pointBackgroundColor: "rgba(255,99,132,1)",
       pointBorderColor: "#fff",
       pointHoverBackgroundColor: "#fff",
       pointHoverBorderColor: "rgba(255,99,132,1)",
-      data: [28, 48, 40, 19, 96, 27, 100]
+      data: [36, 55, 76, 66]
   }]
     },
     options: {
         scale: {
-            reverse: true,
+            reverse: false,
             ticks: {
                 beginAtZero: true
             }
@@ -144,36 +182,79 @@ var ctx = document.getElementById("myChart3");
 var myChart3 = new Chart(ctx, {
     type: 'radar',
     data: {
-      labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+      labels: ["Presentation", "Negotiation", "Teaching", "Designing"],
 datasets: [
   {
-      label: "My First dataset",
-      backgroundColor: "rgba(179,181,198,0.2)",
-      borderColor: "rgba(179,181,198,1)",
-      pointBackgroundColor: "rgba(179,181,198,1)",
+      label: "Shouhei",
+      backgroundColor: "rgba(54, 162, 235, 0.2)",
+      borderColor: "rgba(54, 162, 235, 1)",
+      pointBackgroundColor: "rgba(54, 162, 235, 1)",
       pointBorderColor: "#fff",
       pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgba(179,181,198,1)",
-      data: [65, 59, 90, 81, 56, 55, 40]
+      pointHoverBorderColor: "rgba(54, 162, 235, 1)",
+      data: [15, 10, 45, 50]
   },
   {
-      label: "My Second dataset",
+      label: "Anna",
       backgroundColor: "rgba(255,99,132,0.2)",
       borderColor: "rgba(255,99,132,1)",
       pointBackgroundColor: "rgba(255,99,132,1)",
       pointBorderColor: "#fff",
       pointHoverBackgroundColor: "#fff",
       pointHoverBorderColor: "rgba(255,99,132,1)",
-      data: [28, 48, 40, 19, 96, 27, 100]
+      data: [76, 88, 60, 55]
   }]
     },
     options: {
         scale: {
-            reverse: true,
+            reverse: false,
             ticks: {
                 beginAtZero: true
             }
         }
 }
+});
+</script>
+<script>
+var ctx = document.getElementById("stats");
+var stats = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["HTML/CSS", "Ruby", "Presentation", "Negotiation", "Teaching", "Critical Thinking", "Javascript", "Reading"],
+        datasets: [{
+            label: 'Skill Level',
+            data: [20, 73, 15, 10, 45, 65, 35, 16],
+            backgroundColor: [
+                'rgba(255,99,132,0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255,99,132,0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255,99,132,0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255,99,132,0.2)',
+                'rgba(54, 162, 235, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
 });
 </script>
