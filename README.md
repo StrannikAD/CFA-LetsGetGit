@@ -1,5 +1,5 @@
 ## CFA Education Hackathon Submission Skill Exchange
----
+
 ### Brief
 
 * How to accommodate both students who are struggling and excelling in a classroom.
@@ -38,16 +38,16 @@ Browse at http://localhost:3000
 
 ### Design Process
 
-#### Planning
+#### Planning:
 [Trello Planning] (https://trello.com/b/QdJcV2cB/let-s-get-git)
 
 * Ideation Process
-![Brain Storming](http://res.cloudinary.com/strannikad/image/upload/v1491714881/20170407_164431_ntn1hi.jpg)
+![Brain Storming](http://res.cloudinary.com/strannikad/image/upload/c_scale,w_1787/v1491714881/20170407_164431_ntn1hi.jpg)
 
 * Wireframes
-![Wireframing](http://res.cloudinary.com/strannikad/image/upload/v1491714889/20170407_164404_mpm78m.jpg)
+![Wireframing](http://res.cloudinary.com/strannikad/image/upload/c_scale,w_1789/v1491714889/20170407_164404_mpm78m.jpg)
 
-#### Inspiration
+#### Inspiration:
 [@dansup - Home Page](https://dansup.github.io/bulma-templates/templates/landing.html)
 
 A clean design with gradient colours.
