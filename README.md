@@ -1,15 +1,20 @@
-## CFA Education Hackathon Submission Skill Exchange
+## CFA Education Hackathon Submission - _Skill Exchange_
 
 ### Brief
 
 * How to accommodate both students who are struggling and excelling in a classroom.
 
 ### Solution
-To solve the above objective, we identified  the need to think of the issue from a different perspective. This approach is perfectly summarised in our slogan:
+To solve the above objective, we identified the need to think of the issue from a different perspective. 
 
-*Everybody has something to offer. Everybody has something to gain.*
+This approach is perfectly summarised in our slogan:
 
-Students who excel in technical skills, may need to boost their soft skills, and vice versa. Our solution was to create an online platform where students are able to take a comprehensive skills quiz to identify any knowledge gaps. Subsequently the result of the quiz pairs them with other students according to both of their learning needs.
+>*Everybody has something to offer.* 
+>*Everybody has something to gain.*
+
+Students who excel in technical skills may need to boost their soft skills, and vice versa. 
+
+Our solution was to create an online platform, Skill Exchange, where students are able to take a comprehensive skills quiz to identify any knowledge gaps. Subsequently the result of the quiz pairs them with other students according to both of their learning needs.
 
 ### Installation
 Rails version 5.0.2
@@ -39,7 +44,7 @@ Browse at http://localhost:3000
 ### Design Process
 
 #### Planning:
-[Trello Planning] (https://trello.com/b/QdJcV2cB/let-s-get-git)
+[Trello Planning](https://trello.com/b/QdJcV2cB/let-s-get-git)
 
 * Ideation Process
 ![Brain Storming](http://res.cloudinary.com/strannikad/image/upload/c_scale,w_1787/v1491714881/20170407_164431_ntn1hi.jpg)
